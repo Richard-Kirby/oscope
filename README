@@ -1,0 +1,14 @@
+Needed to change /boot/config.txt to add in dtoverlay=spi1-3cs - this enables the second channel of SPI.
+From stack exchange below.
+
+https://raspberrypi.stackexchange.com/questions/61430/i-want-to-use-spi0-and-spi1-at-the-same-time
+
+Also installed https://github.com/mrwunderbar666/Python-RPi-MCP4922 for the DAC Control and the Adafruit MCP3008 library.
+https://learn.adafruit.com/raspberry-pi-analog-to-digital-converters?view=all
+
+Installed matplotlib via
+
+sudo apt-get install python3-matplotlib
+
+
+
