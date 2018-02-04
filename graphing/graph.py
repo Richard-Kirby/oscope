@@ -3,7 +3,7 @@ import matplotlib.animation as animation
 from matplotlib import style
 
 style.use('fivethirtyeight')
-plt.ion()
+#plt.ion()
 
 fig = plt.figure()
 ax1 = fig.add_subplot(1,1,1)
