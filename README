@@ -10,5 +10,11 @@ Installed matplotlib via
 
 sudo apt-get install python3-matplotlib
 
+Qt5 required for backend - tkinter didn't work so well - no navigation bar.
+sudo apt-get install qt5-default pyqt5-dev pyqt5-dev-tools
+
+from here:
+https://raspberrypi.stackexchange.com/questions/62939/pyqt5-on-a-raspberry-pi
+
 
 

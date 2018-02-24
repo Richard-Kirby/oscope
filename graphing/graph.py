@@ -1,61 +1,52 @@
+import matplotlib
+
+matplotlib.use('Qt5Agg')
+#matplotlib.use('TkAgg')
+
 import matplotlib.pyplot as plt
-import matplotlib.animation as animation
-from matplotlib import style
+import matplotlib.style as style
+import numpy
 
-style.use('fivethirtyeight')
-#plt.ion()
-
-fig = plt.figure()
-ax1 = fig.add_subplot(1,1,1)
+#style.use('fivethirtyeight')
 
 
-def animate(i):
-    graph_data = open('/home/pi/oscope/oscope.csv','r').read()
+def start_graph():
+
+    graph_data = open('/home/pi/oscope/oscope.csv', 'r').read()
 
     if graph_data == None:
         print("Nothing found")
 
-    #print (graph_data)
+    # print (graph_data)
 
     lines = graph_data.split('\n')
     xs = []
     ys = []
-
-
-#    min = input("First sample to display")
-#    max = input("Last sample to display")
-
-#   if min == '':
-#      print("Set first sample to 0")
-#        min = 0
-#    if max == '':
-#        max = len(lines)
-#        print("Set Last Sample to last sample in file ", max)
-
-#    print (min, max)
-    #sample = 0
-
-    #for j in range(int(min), int(max)):
-    #    #print (i)
-    #   x, y0, y1 = lines[j].split(',')
-    #    xs.append(x)
-    #    ys.append((y0, y1))
+    ys2 =[]
 
 
     for line in lines:
-        try:
+        if len(line) > 0:
             x, y0, y1 = line.split(',')
-        except:
-            print("fart ", line)
 
         xs.append(x)
-        print(x)
         ys.append((y0, y1))
+        #ys2.append((float(y0)*.1))
 
-    ax1.clear()
-    ax1.plot(xs, ys)
+    #print (ys2)
+    ticks = numpy.arange(0, 4.0, 0.25)
+    print (ticks)
 
-def start_graph():
-    ani = animation.FuncAnimation(fig, animate, interval=1000)
+    plt.plot(ys)
+    #plt.yticks(ticks)
+    #plt.ylim(0 , 4.0)
+    #plt.minorticks_off()
+    #l, = plt.plot(')
+
+    #plt.xticks(xs[0:30], xs[0:30])
+
+    #l, = plt.plot(xs, ys, lw=2, color='red')
+
+    #plt.axis([0, 1, -10, 10])
     plt.show()
 

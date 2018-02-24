@@ -1,9 +1,14 @@
+import matplotlib
+
+matplotlib.use('Qt5Agg')
+
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 from matplotlib import style
 import time
 
 style.use('fivethirtyeight')
+
 fig = plt.figure()
 
 
@@ -23,6 +28,8 @@ def animate(i):
     ax1.plot(xs, ys)
 
 ani = animation.FuncAnimation(fig, animate, interval=1000)
-time.sleep(4)
+
+animate(0)
+#time.sleep(4)
 plt.show()
 #animate(1)

@@ -46,18 +46,21 @@ if __name__ == '__main__':
     try:
         while True:
             x = 0
+            y = 0
             for i in range(0, 100):
                 x = x + 40
+                y +=20
                 dac.setVoltage(0, x)
-                dac.setVoltage(1, x)
+                dac.setVoltage(1, y)
                 print(x)
-                time.sleep(0.1)
+                time.sleep(0.01)
             for i in range(0, 100):
                 x = x - 40
+                y -=20
                 dac.setVoltage(0, x)
-                dac.setVoltage(1, x)
+                dac.setVoltage(1, y)
                 print(x)
-                time.sleep(0.1)
+                time.sleep(0.01)
 
     except KeyboardInterrupt:   # Press CTRL C to exit program
         dac.setVoltage(0, 0)
