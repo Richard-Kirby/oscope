@@ -2,8 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3e9fb2b-edde-480a-a7bf-f0a707ac3d2c" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.~lock.oscope.csv#" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp" afterPath="$PROJECT_DIR$/tmp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/oscope.iml" afterPath="$PROJECT_DIR$/.idea/oscope.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Adafree_simpletest.py" afterPath="$PROJECT_DIR$/Adafree_simpletest.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example.py" afterPath="$PROJECT_DIR$/example.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example.txt" afterPath="$PROJECT_DIR$/example.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graphing/__init__.py" afterPath="$PROJECT_DIR$/graphing/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graphing/graph - old.py" afterPath="$PROJECT_DIR$/graphing/graph - old.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graphing/graph.py" afterPath="$PROJECT_DIR$/graphing/graph.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graphing/graph2.py" afterPath="$PROJECT_DIR$/graphing/graph2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graphing/slider.py" afterPath="$PROJECT_DIR$/graphing/slider.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/matex.py" afterPath="$PROJECT_DIR$/matex.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oo_plot.py" afterPath="$PROJECT_DIR$/oo_plot.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oscope.csv" afterPath="$PROJECT_DIR$/oscope.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rk4922set.py" afterPath="$PROJECT_DIR$/rk4922set.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rk4922test.py" afterPath="$PROJECT_DIR$/rk4922test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample1.py" afterPath="$PROJECT_DIR$/sample1.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simple.py" afterPath="$PROJECT_DIR$/simple.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simplesamba.sh" afterPath="$PROJECT_DIR$/simplesamba.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subplot.py" afterPath="$PROJECT_DIR$/subplot.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp.py" afterPath="$PROJECT_DIR$/tmp.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp.tmp" afterPath="$PROJECT_DIR$/tmp.tmp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/what.py" afterPath="$PROJECT_DIR$/what.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,8 +54,8 @@
       <file leaf-file-name="graph.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/graphing/graph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+            <state relative-caret-position="154">
+              <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -68,18 +95,18 @@
         <option value="$PROJECT_DIR$/graphing/graph2.py" />
         <option value="$PROJECT_DIR$/oo_plot.py" />
         <option value="$PROJECT_DIR$/what.py" />
-        <option value="$PROJECT_DIR$/graphing/graph.py" />
-        <option value="$PROJECT_DIR$/graphing/graph.py" />
         <option value="$PROJECT_DIR$/Adafree_simpletest.py" />
         <option value="$PROJECT_DIR$/rk4922test.py" />
+        <option value="$PROJECT_DIR$/graphing/graph.py" />
+        <option value="$PROJECT_DIR$/graphing/graph.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-12" />
-    <option name="y" value="-12" />
-    <option name="width" value="2762" />
-    <option name="height" value="1850" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="918" />
+    <option name="y" value="28" />
+    <option name="width" value="1846" />
+    <option name="height" value="1754" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -178,7 +205,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1381" height="885" extended-state="7" />
+    <frame x="459" y="14" width="923" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2444934" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -500,8 +527,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/graphing/graph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+        <state relative-caret-position="154">
+          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
           <folding />
         </state>
       </provider>

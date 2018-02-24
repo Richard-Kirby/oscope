@@ -14,7 +14,7 @@ def start_graph():
 
     graph_data = open('/home/pi/oscope/oscope.csv', 'r').read()
 
-    if graph_data == None:
+    if graph_data is None:
         print("Nothing found")
 
     # print (graph_data)
@@ -30,14 +30,35 @@ def start_graph():
             x, y0, y1 = line.split(',')
 
         xs.append(x)
-        ys.append((y0, y1))
+        ys.append((float(y0), float(y1)))
         #ys2.append((float(y0)*.1))
 
+    print("max", max(y0), max(y1), max (x))
+
     #print (ys2)
-    ticks = numpy.arange(0, 4.0, 0.25)
+    ticks = numpy.arange(0, 1200.0, 100)
     print (ticks)
 
     plt.plot(ys)
+    ymin, ymax = plt.ylim()
+
+    print("ylim", ymin, ymax)
+    plt.yscale('linear')
+    plt.ylabel('Volts(V)')
+    plt.xlabel('Sample Num')
+    plt.title("Bench Tool 0.001")
+    plt.autoscale(tight=True)
+    plt.grid()
+    plt.tight_layout()
+
+    ticklabel=[]
+
+    for tick in ticks:
+        ticklabel.append(tick/1000 * 3.3)
+
+    print (ticklabel)
+
+    #Temp  plt.yticks(ticks, ticklabel)
     #plt.yticks(ticks)
     #plt.ylim(0 , 4.0)
     #plt.minorticks_off()
