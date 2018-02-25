@@ -22,41 +22,45 @@ def start_graph():
     lines = graph_data.split('\n')
     xs = []
     ys = []
-    ys2 =[]
+    dig =[]
 
 
     for line in lines:
         if len(line) > 0:
-            x, y0, y1 = line.split(',')
+            x, y0, y1, dig0, dig1 = line.split(',')
 
         xs.append(x)
-        ys.append((float(y0), float(y1)))
-        #ys2.append((float(y0)*.1))
+        ys.append((float(y0), float(y1), float(dig0),float (dig1) ))
 
-    print("max", max(y0), max(y1), max (x))
-
-    #print (ys2)
-    ticks = numpy.arange(0, 1200.0, 100)
-    print (ticks)
-
+    plt.figure("Pi Bench Tool")
+    plt.subplot(111)
     plt.plot(ys)
-    ymin, ymax = plt.ylim()
 
-    print("ylim", ymin, ymax)
-    plt.yscale('linear')
     plt.ylabel('Volts(V)')
     plt.xlabel('Sample Num')
-    plt.title("Bench Tool 0.001")
-    plt.autoscale(tight=True)
+    plt.title("Bench Tool 00.00.01")
+    #plt.autoscale(tight=True)
     plt.grid()
     plt.tight_layout()
 
-    ticklabel=[]
+    plt.show()
 
-    for tick in ticks:
-        ticklabel.append(tick/1000 * 3.3)
 
-    print (ticklabel)
+'''  
+    plt.plot(ys)
+    yminvar, ymaxvar = plt.ylim()
+
+
+    print("ylim", yminvar, ymaxvar)
+    plt.yscale('linear')
+    plt.ylim(ymin=-1.5)
+
+    #ticklabel=[]
+
+    #for tick in ticks:
+    #   ticklabel.append(tick/1000 * 3.3)
+
+    #print (ticklabel)
 
     #Temp  plt.yticks(ticks, ticklabel)
     #plt.yticks(ticks)
@@ -70,4 +74,4 @@ def start_graph():
 
     #plt.axis([0, 1, -10, 10])
     plt.show()
-
+'''
