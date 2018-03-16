@@ -34,6 +34,7 @@ SOFTWARE.
 import time
 import sys
 import RPi.GPIO as GPIO
+import numpy as np
 
 from MCP4922 import MCP4922
 
@@ -50,16 +51,18 @@ if __name__ == '__main__':
             for i in range(0, 100):
                 x = x + 40
                 y +=20
+                z = 4096/2 *(1 + np.sin(i/100*2*np.pi))
                 dac.setVoltage(0, x)
-                dac.setVoltage(1, y)
-                print(x)
+                dac.setVoltage(1, int(z))
+                print(x, y, z)
                 time.sleep(0.01)
             for i in range(0, 100):
                 x = x - 40
                 y -=20
+                z = 4096/2 *(1 + np.sin(i/100*2*np.pi))
                 dac.setVoltage(0, x)
-                dac.setVoltage(1, y)
-                print(x)
+                dac.setVoltage(1, int(z))
+                print(x, y, z)
                 time.sleep(0.01)
 
     except KeyboardInterrupt:   # Press CTRL C to exit program
